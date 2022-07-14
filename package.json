@@ -2,7 +2,7 @@
   "name": "Vpowercharing",
   "version": "1.0.0",
   "description": "Vpowercharging",
-  "author": "Themefisher",
+  "author": "Sarathju",
   "license": "MIT",
   "scripts": {
     "dev": "gulp",
