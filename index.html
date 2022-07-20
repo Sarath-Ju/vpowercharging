@@ -204,77 +204,7 @@ plug-in hybrids.
                     </div>
                 </div>
             </div> <!-- / .row -->
-        </div> <!-- / .container -->
-        <br/>
-        <div class="container"  id="countdownContainer">
-            <div class="row">
-
-                <div class="col text-center">
-                    <h2 style="background-color: darkslategray;color:white;border-radius: 25px;">We are launching soon..!</h2>
-                </div>
-            </div>
-            <div class="row" style="border-radius: 23px; background-color: darkslategray;">
-              <div class="col-lg-3 col-sm-6 col-md-6">
-                  <div class="text-center feature-block">
-                      <h4 class="mb-2" style="color:whitesmoke">Days</h4>
-                      <p id="countdownDays" style="color:whitesmoke"></p>
-                  </div>
-              </div>
-  
-              <div class="col-lg-3 col-sm-6 col-md-6">
-                  <div class="text-center feature-block">
-                      <h4 class="mb-2" style="color:whitesmoke">hours</h4>
-                      <p id="countdownHours"  style="color:whitesmoke"></p>
-                  </div>
-              </div>
-  
-              <div class="col-lg-3 col-sm-6 col-md-6">
-                  <div class="text-center feature-block" >
-                      <h4 class="mb-2"  style="color:whitesmoke">mins</h4>
-                      <p  id="countdownMins" style="color:whitesmoke"></p>
-                  </div>
-              </div>
-  
-              <div class="col-lg-3 col-sm-6 col-md-6">
-                  <div class="text-center feature-block" >
-                      <h4 class="mb-2" style="color:whitesmoke">Secs</h4>
-                      <p id="countdownSecs" style="color:whitesmoke"></p>
-                  </div>
-              </div>
-          </div>
-          </div>
-          </div>
-            <script>
-              // Set the date we're counting down to
-              var countDownDate = new Date("Jul 15, 2022 20:00:00").getTime();
-              // Update the count down every 1 second
-              var x = setInterval(function() {
-              
-              // Get today's date and time
-              var now = new Date().getTime();
-                  
-              // Find the distance between now and the count down date
-              var distance = countDownDate - now;
-                  
-              // Time calculations for days, hours, minutes and seconds
-              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                  
-              // Output the result in an element with id="demo"
-              document.getElementById("countdownDays").innerHTML = days;
-              document.getElementById("countdownHours").innerHTML = hours;
-              document.getElementById("countdownMins").innerHTML = minutes;
-              document.getElementById("countdownSecs").innerHTML = seconds;
-  
-              // If the count down is over, write some text 
-              if (distance < 0) {
-                  clearInterval(x);
-                  document.getElementById("countdownContainer").style.display  = "none";
-              }
-              }, 1000);
-            </script>
+        </div> <!-- / .container -->       
     </section>
 
 
